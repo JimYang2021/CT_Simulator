@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './Input';
-import {InputGroup,Col,Row} from 'react-bootstrap';
+import {Col,Row} from 'react-bootstrap';
 
 class InputPanel extends React.Component{
     render (){

@@ -13,7 +13,7 @@ class Input extends React.Component{
   
       return (
       <div style={style}>
-        <label for={this.props.name} style={{padding:'0px 12px'}}>
+        <label htmlFor={this.props.name} style={{padding:'0px 12px'}}>
             {this.props.name}
         </label>
         <ShowList options={this.props.options} id={this.props.name}

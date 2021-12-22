@@ -17,8 +17,7 @@ class CTImage extends React.Component{
       else{
         fileString = `../catalog1/${this.props.name}${this.props.fileProps['Index']}.jpg`;
       }
-  
-  
+      console.log("$$$",fileString);
       return (
         <>
             <Image src={fileString} style={style} alt='' thumbnail/>

@@ -62,7 +62,7 @@ class App extends React.Component {
       withCredentials: undefined
     }
 
-    let showMeas = (function (data) {
+    let showMeas = (data) => {
       // Does this need to go in handle change?
       let extract = {};
       extract = data[0];
@@ -83,9 +83,9 @@ class App extends React.Component {
         'DLP' : extract[7],
         'Noise' : extract[8]
       });
-      console.log(newState);
+      console.log("@@@",newState);
       this.setState(newState);
-    }).bind(this);
+    };
 
     function parseData(url, callBack) {
       Papa.parse(url, {
